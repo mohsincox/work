@@ -88,8 +88,30 @@
             dateFormat: 'yy-m-d',
             formatTime:'H:i'
         });
+/*  ajax
+var basePath = $('base').attr('href');
 
+$(document).ready(function () {
+   $("#serial_patient_id").on('click',function(){
+            var str = $("#patient_id").val();
+            values = 'patient_id=' + str;
+            $url=basePath + "/doctor-serial-patient-name";
+            $.ajax({
+            type: "GET",
+            url:$url,
+            data: values,
+            }).success(function (data) {
+               $('#name-of-patient').text(data);
+                })
+                .error(function (data) {
 
+                });
+                
+           
+        });
+
+});
+*/
     </script>
 
 </body>
