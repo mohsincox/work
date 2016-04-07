@@ -112,6 +112,31 @@ $(document).ready(function () {
 
 });
 */
+/*
+ public function store(DoctorSerialRequest $request)
+    {
+      // dd($request->all());
+
+        $doctorId = $request->doctor_id;
+
+      $doctor = Doctor::find($doctorId);
+
+     
+      $request->merge( ['amount' => $doctor->amount] );
+
+      // $request->amount = $doctor->amount;
+
+// dd($request->all());
+
+      $docSerial = DoctorSerial::create($request->all());
+
+      // dd($request);
+
+        flash()->success('Successfully Created');
+
+        return redirect('doctor-serial/show-serial/'. $docSerial->id);
+    }
+*/
     </script>
 
 </body>
